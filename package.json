@@ -1,0 +1,31 @@
+{
+  "name": "grunt-nuget-cli",
+  "description": "Grunt task that works as a wrapper for NuGet.exe commands",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tactivos/grunt-nuget-cli",
+  "author": {
+    "name": "Johnny Halife",
+    "url": "http://github.com/johnnyhalife/"
+  },
+  "contributors": [
+    "Juli Racca <juli@mural.ly> (http://twitter.com/juliracca)",
+    "Santiago Montero <santiago@mural.ly> (http://twitter.com/leChantaux)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tactivos/grunt-nuget-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tactivos/grunt-nuget-cli/issues"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.x"
+  },
+  "peerDependecies": {
+	 "grunt" : "0.4.x"
+  },
+  "keywords": ["gruntplugin", "nuget", "xamarin", "mono", "ios"]
+}

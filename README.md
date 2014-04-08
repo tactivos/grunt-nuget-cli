@@ -1,16 +1,16 @@
 grunt-nuget
 ===========
 
-[Grunt][grunt] taks that works as a wrapper for NuGet.exe commands.
+[Grunt][grunt] task that works as a wrapper for NuGet.exe commands.
 
 ## Getting Started
 
-Install this grunt plugin next to your project's gruntfile with: `npm install grunt-nuget --save-dev`
+Install this grunt plugin next to your project's gruntfile with: `npm install grunt-nuget-cli --save-dev`
 
 Then add this line to your project's `Gruntfile.js` :
 
 ```javascript
-grunt.loadNpmTasks('grunt-nuget');
+grunt.loadNpmTasks('grunt-nuget-cli');
 ```
 
 Then specify your config:
@@ -25,8 +25,10 @@ Then specify your config:
         runtimeVersion: 'v4.0'
       },
       restore: {
-        /** @required command to execute for the given target*/
-        command: 'restore'
+        /** @required command to execute for the given target */
+        command: 'restore',
+        /** @optional  additional arguments to pass to NuGet.exe */
+        args: 'restore',
       }
     }
   });
@@ -56,5 +58,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-        
