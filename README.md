@@ -5,12 +5,12 @@ grunt-nuget
 
 ## Getting Started
 
-Install this grunt plugin next to your project's gruntfile with: `npm install grunt-nuget-cli --save-dev`
+Install this grunt plugin next to your project's gruntfile with: `npm install grunt-nuget --save-dev`
 
 Then add this line to your project's `Gruntfile.js` :
 
 ```javascript
-grunt.loadNpmTasks('grunt-nuget-cli');
+grunt.loadNpmTasks('grunt-nuget');
 ```
 
 Then specify your config:
@@ -19,9 +19,9 @@ Then specify your config:
   grunt.initConfig({
     nuget: {
       options: {
-        /** @required location of NuGet.exe */
+        /** @optional, no longer required, location of NuGet.exe */
         location: './Tools/NuGet/NuGet.exe',
-        /** @required mono runtime version (right now it only works with mono) */
+        /** @optional, no longer required, mono runtime version (right now it only works with mono) */
         runtimeVersion: 'v4.0'
       },
       restore: {
