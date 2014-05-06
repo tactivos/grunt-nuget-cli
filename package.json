@@ -1,7 +1,7 @@
 {
   "name": "grunt-nuget-cli",
   "description": "Grunt task that works as a wrapper for NuGet.exe commands",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/tactivos/grunt-nuget-cli",
   "author": {
     "name": "Johnny Halife",

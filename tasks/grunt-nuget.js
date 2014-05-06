@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     var done = this.async();
     var async = grunt.util.async;
 
-    var nugetExe = (this.options().location || path.resolve(__dirname, '../bin/NuGet.exe'));
+    var nugetExe = (this.options().location || path.resolve(__dirname, '../nuget/NuGet.exe'));
     var runtimeVersion = this.options().runtimeVersion || 'v4.0';
 
     var args = []; //arguments to be used for invoking mono
